@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+</head>
+<body>
+    <h1> HTML 5 </h1>
+    <hr>
+    <p> Es la quinta y la actual versión de HTML estándar. <br>
+        Publicado en Octubre de 2014 por World Wide Web Consortium (W3C). <br>
+        Extiende y mejora las etiquetas disponibles. <br>
+        Enriquece el lenguaje agregando soporte multimedia. <br>
+        Evitar plugins de empresas privadas. <br>
+        Nuevos elementos: Estructura, formularios, etc. <br>
+        Interfaces de Programación: Canvas, arrastrar y soltar, trabajo offline, geolocalización, etc.
+    </p>
+
+    <!--NUEVO Doctype-->
+    <h3> NUEVO Doctype </h3>
+    <p>“El Doctype o “Declaración del tipo de documento” es una
+        instrucción especial que va al inicio de nuestro documento HTML y
+        que permite al navegador entender qué versión de HTML estamos
+        utilizando.”
+    </p>
+    <ul>
+        <li>
+            La declaración de DOCTYPE es bastante simple <br>
+            <b>&lt!DOCTYPE html&gt</b>
+        </li>
+        <li>
+            Ejemplo de DOCTYPE en HTML 4.01 Strict:<br>
+            <b>&lt!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd"&gt</b>
+        </li>
+    </ul>
+
+    <!--NUEVO Charset-->
+    <h3> NUEVO Charset </h3>
+        <p>El elemento “meta” con atributo charset en un documento HTML indica lutf-8a
+            codificación de caracteres utilizada (charset).”
+            UTF-8 (UCS Transformation Format 8) es la Codificación de caracteres
+            más común en la red.
+        </p>
+    <ul>
+        <li>
+            La declaración de codificación de caracteres es bastante simple <br>
+            <b>&ltmeta charset="utf-8"&gt</b>
+        </li>
+        <li>
+            Ejemplo de Charset en HTML 4.01 Strict: <br>
+            <b>&ltmeta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt</b>
+        </li>
+        </ul>
+
+    <!--Otras metaetiquetas-->
+    <h3> OTRAS METAETIQUETAS </h3>
+    <p>El elemento “meta” con atributo charset en un documento HTML indica lutf-8a
+        codificación de caracteres utilizada (charset).”
+        UTF-8 (UCS Transformation Format 8) es la Codificación de caracteres
+        más común en la red.
+    </p>
+    <ul>
+        <li>
+            <b>&ltmeta charset="UTF-8"></b> <br>
+            Establece el tipo de codificación del documento.
+        </li>
+        <li>
+            <b>&ltmeta name="title" content="Título de la WEB"></b> <br>
+            Contiene el titulo que se mostrará en los buscadores.
+        </li>
+        <li>
+            <b>&ltmeta name="description" content="Descripción de la WEB"></b> <br>
+            Es el texto que se muestra bajo el título en los motores de búsqueda.
+        </li>
+    </ul>
+
+
+    <!-- ELEMENTOS ESTRUCTURALES -->
+    <h3> ELEMENTOS ESTRUCTURALES </h3>
+    <p>HTML5 ofrece nuevos elementos estructurales para establecer diferentes partes de una página web.</p>
+    <figure>
+        <img src="imagenes/elementosEstructuralesHTML5.jpg" alt="elemEstruc" title="Elementos Estructurales">
+        <figcaption>HTML 5 - Elementos Estructurales</figcaption>
+    </figure>
+    <ul>
+        <li>
+            <b>header:</b> La cabecera de una página. No confundir con el elemento head
+        </li>
+        <li>
+            <b>footer:</b> El final de la página.
+        </li>
+        <li>
+            <b>nav:</b> Una colección de links a otras páginas
+        </li>
+        <li>
+            <b>section:</b> Puede ser un capítulo, una sección de un capítulo. Es para agrupar contenido.
+        </li>
+        <li>
+            <b>article:</b> Una entrada independiente en un blog, revista, etc.
+        </li>
+        <li>
+            <b>aside:</b> Dentro de este elemento va el contenido que está fuera del tema principal de la página.
+        </li>
+        <li>
+            <b>main:</b> Contenido importante de la página.
+        </li>
+    </ul>
+
+    <!--ENCABEZADO-->
+    <header>
+        La etiqueta header contiene la cabecera, practicamente se presenta como una barra en la que se muestra informacion, logo, descripcion, etc.
+        <!--MENU DE NAVEGACION-->
+        <nav>  Contiene la barra de navegacion de una página web. </nav>
+    </header>
+    <main>
+        <!--CONTENIDO PRINCIPAL DEL SITIO WEB-->
+        <section>
+            Esta es una seccion de contenido del bloque principal (MAIN)
+            <!--ARTICULO 1-->
+            <article>
+                Esto es un articulo del sitio
+            </article>
+            <!--ARTICULO 2-->
+            <article>
+                Esto seria un articulo
+            </article>
+        </section>
+    </main>
+    <aside>
+        La etiqueta aside contiene contiene informacion accesoria, que no suele añadir un valor signficativo a la
+        tematica de la pagina. Puede ser usada para la barra lateral en las que puede ir elementos de widgets,
+        con cualquier contenido dentro.
+    </aside>
+    <!--PIE DE PAGINA DEL SITIO WEB (nombre de la empresea, quien fue el desarrollador, copyrigth, direccion, telefono)-->
+    <footer>
+        Footer contiene el pie de pagina, pueden ir en ella enlaces, mapa del sitio, etc.
+    </footer>
+
+    <!-- IMAGEN -->
+    <h3> IMAGEN </h3>
+    <p>Insertar una imagen en HTML es muy simple, simplemente debemos indicar que el elemento es una imagen
+        y <b>cuál es el archivo o donde esta ubicado</b> para que sea mostrado en el navegador, veamos.
+    </p>
+    <p><b>Etiqueta &ltimg/>:</b> Utilizaremos la etiqueta &ltimg/> para insertar imágenes, a diferencia de otras etiquetas, <img/> no tiene una
+        etiqueta de cierre, pero si atributos.
+    </p>
+    <p><b>Atributo src:</b> Para indicar la ubicación o dirección de la imagen, utilizaremos el atributo src, la imagen puede estar
+        almacenada en la misma carpeta que el documento HTML o también podemos agregar la imagen desde una
+        dirección URL, de la siguiente manera &ltimg src="gatitos.jpg"/></p>
+
+    <h4>Imagen local</h4>
+    <figure>
+        <img src="imagenes/html5image.jpg" alt="Texto que se muestra cuando la imagen no se carga por alguna razon" title="Cuando pasamos el mouse por encima de la imagen aparece este mensaje" width="30%">
+        <figcaption>Fig. 1 - Logo</figcaption>
+    </figure>
+    <h4>Imagen de Internet</h4>
+    <figure>
+        <img src="https://icones.pro/wp-content/uploads/2021/05/icone-html-bleue.png" alt="Html 5" width="30%">
+        <figcaption>Fig. 2 - Logo de Internet</figcaption>
+    </figure>
+
+    <!-- VIDEO -->
+    <h3> VIDEO </h3>
+    <p>Especifica un estándar para incrustar video en una página web</p>
+    <video width="320" height="240" controls>
+        <source src="videos/gatito.mp4" type="video/mp4">
+        <source src="videos/gatito.ogg" type="video/ogg">
+        Su navegador no soporta la etiqueta video
+    </video>
+    <p>Video de Youtube</p>
+    <video src="https://www.youtube.com/embed/kN1XP-Bef7w" controls>
+    </video>
+    <!--Insertando el codigo de Youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    
+    <!-- AUDIO -->
+    <h3> AUDIO </h3>
+    <audio controls>
+        <source src="dale-boca.ogg" type="audio/ogg">
+        <source src="audios/elPepe.webm" type="audio/mpeg">
+        Su navegador no soporta el elemento audio
+    </audio>
+
+    <!-- UBICACIÓN -->
+    <h3> UBICACIÓN </h3>
+    <p>Click para obtener sus coordenadas.</p>
+    <button onclick="getLocation()">Enviar Ubicación</button>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+    <!-- Trabajar con fechas y horas -->
+    <h3> Trabajar con fechas y horas </h3>
+    <ul>
+        <li>
+            INPUT date: Para introducir una fecha que no haga parte de del conjunto horario.
+            <input type="date">
+        </li>
+        <li>
+            INPUT datetime: Para introducir fecha y hora.
+            <input type="datetime-local">
+        </li>
+        <li>
+            INPUT month: Para introducir un mes de un año.
+            <input type="month">
+        </li>
+        <li>
+            INPUT week: Ofrece una utilidad para escribir y captar información de semanas.
+            <input type="week">
+        </li>
+        <li>
+            INPUT time: Obtiene información con horas, minutos y segundos.
+            <input type="time">
+            </li>
+        </ul>
+
+        <form action="" method="post">
+            <!-- NUEVOS INPUTS -->
+            <h2> NUEVOS INPUTS </h2>
+            <!-- Trabajar con fechas y horas -->
+            <h3> Trabajar con correos electrónicos </h3>
+            <label for="email">Email:</label>
+            <input type="email">
+            <br/>
+
+            <!-- Trabajar con numeros -->
+            <h3> Trabajar con numeros </h3>
+            <label for="edad">Edad:</label>
+            <input type="number">
+            <br/>
+
+            <!-- Trabajar con color -->
+            <h3> Trabajar con color </h3>
+            <label for="color">Color:</label>
+            <input type="color">
+            <br/>
+
+            <!-- Trabajar con fechas y horas -->
+            <h3> Trabajar con URL </h3>
+            <label for="url">URL:</label>
+            <input type="url">
+            <br/>
+            
+            <!-- Formularios - Validaciones -->
+            <h3> Formularios - Validaciones </h3>
+            <ul>
+                <li>
+                    Hacer que los campos sean obligatorios usando required:
+                    <input type="text" required>
+                </li>
+                <li>
+                    Restringir la longitud de los datos:<br>
+                    - <b>minlength, maxlength:</b> para datos de texto: <input type="text" minlength="0" maxlength="5"> <br>
+                    - <b>min y max</b> para el valor máximo del tipo número <input type="number" min="0" max="10">
+                </li>
+                <li>
+                    Restringir el tipo de datos usando type: &ltinput type="email" />: <input type="email" />
+                </li>
+                <li>
+                    INPUT week: Ofrece una utilidad para escribir y captar información de semanas. &ltinput type="week">: <input type="week">
+                </li>
+                <li>
+                    Especificar patrones de datos usando pattern:
+                    Especifica un patrón de expresiones regulares que los datos ingresados del formulario deben coincidir.
+                </li>
+            </ul>
+            
+            <!-- Formularios - Atributos -->
+            <h3> Formularios - Atributos </h3>
+            <ul>
+                <li>
+                    readonly
+                </li>
+                <li>
+                    disabled
+                </li>
+                <li>
+                    placeholder
+                </li>
+                <li>
+                    autofocus <input type="text" autofocus>
+                </li>
+                <li>
+                    novalidate: no controla que se haya llenado el campo <input type="text" novalidate>
+                </li>
+                <li>
+                    otros
+                </li>
+            </ul>
+
+            <!--BOTON Enviar-->
+            <input type="submit">
+        </form>
+</body>
+</html>

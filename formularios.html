@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+    <hr>
+    <ul>
+        <li>
+            Necesidad de interactuar con los usuarios.
+        </li>
+        <li>
+            Componente de una página web. &ltform> &lt/form>
+        </li>
+        <li>
+            Existen controles para que el usuario proporcione información.
+        </li>
+        <li>
+            El procesamiento de esa información es en el servidor (más adelante).
+        </li>
+    </ul>
+
+    <h2>Definir</h2>
+    <ul>
+        <li>
+            DONDE se mandan los datos
+        </li>
+        <li>
+            COMO se mandan los datos
+        </li>
+    </ul>
+
+    <p>
+        &ltform action="/donde" method="como"> <br>
+        &lt/form>
+    </p>
+
+    <form action="" method="post">
+        <h2>Elementos de Entrada</h2>
+        <ul>
+            <li>
+                Campo de texto
+            </li>
+            <li>
+                Casilla de verificación (Checkbox)
+            </li>
+            <li>
+                Botón de radio (radiobutton)
+            </li>
+            <li>
+                Cuadro de selección (select)
+            </li>
+            <li>
+                Botón de enviar (submit)
+            </li>
+            <li>
+                Botón de reinicio (Reset)
+            </li>
+            <li>
+                Selección de archivo (upload)
+            </li>
+            <li>
+                Campo de contraseña
+            </li>
+            <li>
+                etc.
+            </li>
+            <li>
+                etc (HTML5).
+            </li>
+        </ul>
+
+        <!-- Texto -->
+        <h4>TEXTO con tipeo text</h4>
+        <label>Nombre Campo</label>
+        <input type="text"/>
+        <br>
+
+        <h4>TEXTO con tipeo text y require (campo obligatorio)</h4>
+        <label>Nombre Campo</label>
+        <input type="text" required=""/>
+        <br>
+
+        <h4>TEXTO con tipeo number</h4>
+        <label>Nombre Campo</label>
+        <input type="number"/>
+        <br>
+
+        <h4>TEXTO con tipeo password</h4>
+        <label>Nombre Campo</label>
+        <input type="password"/>
+        <br>
+
+        <h4>TEXTO con tipeo email</h4>
+        <label>Nombre Campo</label>
+        <input type="email"/>
+        <br>
+
+        <h4>TEXTO con tipeo color</h4>
+        <label>Nombre Campo</label>
+        <input type="color"/>
+        <br>
+
+        <h4>TEXTO con tipeo range (elegir entre 0 y 10)</h4>
+        <label>Nombre Campo</label>
+        <input type="range" min="0" max="5"/>
+        <br>
+
+        <h4>TEXTO con tipeo date</h4>
+        <label>Nombre Campo</label>
+        <input type="date"/>
+        <br>
+
+        <h4>TEXTO con tipeo time</h4>
+        <label>Nombre Campo</label>
+        <input type="time"/>
+        <br>
+
+        <h4>TEXTO con tipeo button (un boton)</h4>
+        <label>Nombre Campo</label>
+        <input type="button" value="Boton"/>
+        <br>
+
+        <h4>TEXTO con tipeo submit (un boton que nos envia los datos, viene con value por defecto)</h4>
+        <label>Nombre Campo</label>
+        <input type="submit"/>
+        <br>
+
+        <h4>TEXTO con textarea</h4>
+        <label>Mensaje</label>
+        <textarea></textarea>
+        <br>
+
+        <!-- Select -->
+        <h4>SELECT</h4>
+        <label>Tu favorita:</label>
+        <select>
+            <option>Seleccione una</option>
+            <option>Dua Lipa</option>
+            <option>Kendall Jenner</option>
+            <option>Miley Cyrus</option>
+            <option>Selena Gómez</option>
+            <option>Gigi Hadid</option>
+        </select>
+        <br>
+
+        <!-- Checkbox -->
+        <h4>CHEKBOX</h4>
+        <label>Mejores artistas de la época:</label> <br>
+        <input type="checkbox"> Dua Lipa<br>
+        <input type="checkbox"> Kendall Jenner<br>
+        <input type="checkbox"> Miley Cyrus<br>
+        <input type="checkbox"> Selena Gómez<br>
+        <input type="checkbox"> Gigi Hadid<br>
+
+        <!-- RADIO -->
+        <h4>RADIO</h4>
+        <label>Categoría:</label>
+        <input type="radio" name="cat">Modelo
+        <input type="radio" name="cat">Cantante
+        <br>
+
+        <!-- File -->
+        <h4>FILE</h4>
+        <label>Suba la artista que le guste:</label>
+        <input type="file">
+        <br>
+
+        <!-- Botones -->
+        <h4>BOTONES</h4>
+        <input type="submit">
+        <input type="reset">
+        <br>
+
+        <!-- Password -->
+        <h4>PASSWORD</h4>
+        <label>Contraseña:</label>
+	    <input type="password">
+
+        <!-- ATRIBUTOS -->
+        <h2>ATRIBUTOS</h2>
+        <ul>
+            <li>
+                id
+            </li>
+            <li>
+                name
+            </li>
+            <li>
+                value
+            </li>
+            <li>
+                checked
+            </li>
+            <li>
+                size
+            </li>
+            <li>
+                maxlength
+            </li>
+            <li>
+                readonly
+            </li>
+            <li>
+                disable=”disabled”
+            </li>
+        </ul>
+
+        <!-- Texto: Value -->
+        <h3> Value: "Paula" aparece escrita por defecto (se debe borrar para escribir algo) </h3>
+        <label>Tu Nombre</label>
+        <input type="text" value="Paula"/>
+        <br>
+
+        <!-- Texto: Placeholder -->
+        <h3> Placeholder: "Ingrese su nombre" aparece por defecto (desaparece en cuando escribamos algo)</h3>
+        <label>Tu Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre"/>
+        <br>
+
+        <!-- Select: checked-->
+        <h3> Checked: "Kendall Jenner" aparece seleccionada por defecto </h3>
+        <label>Mejores artistas de la epoca:</label> <br/>
+        <input type="checkbox"> Dua Lipa<br>
+        <input type="checkbox" checked> Kendall Jenner<br>
+        <input type="checkbox"> Miley Cyrus<br>
+        <input type="checkbox"> Selena Gómez<br>
+        <input type="checkbox"> Gigi Hadid<br>
+
+        <!-- Select: selected-->
+        <h3> Selected: "Miley Cyrus" aparece seleccionada por defecto </h3>
+        <label>Tu favorita:</label>
+        <select>
+            <option>Seleccione una</option>
+            <option>Dua Lipa</option>
+            <option>Kendall Jenner</option>
+            <option selected>Miley Cyrus</option>
+            <option>Selena Gómez</option>
+            <option>Gigi Hadid</option>
+        </select>
+        <br>
+
+        <!-- Texto: size -->
+        <h3> Size: El tamaño del campo es de 50 (distinto al tamaño del contenido)</h3>
+        <label>Campo</label>
+        <input type="text" placeholder="Ingrese prueba" size="50"/>
+        <br>
+
+        <h3> Size: El tamaño del campo es de 100 (distinto al tamaño del contenido)</h3>
+        <label>Campo</label>
+        <input type="text" placeholder="Ingrese prueba" size="100"/>
+        <br>
+
+        <!-- Texto: maxlength -->
+        <h3> Maxlength: Maximo caracteres de 10 </h3>
+        <label>Campo</label>
+        <input type="text" placeholder="Ingrese prueba" maxlength="10"/>
+        <br>
+
+        <!-- Texto: readonly -->
+        <h3> Readonly: Solo leer. Edicion e ingreso Inhabilitado</h3>
+        <label>Campo</label>
+        <input type="text" value="Hola" readonly/>
+        <br>
+        <label>Campo</label>
+        <textarea readonly=""> Hola </textarea>
+        <br>
+
+        <!-- Texto: disable=”disabled” -->
+        <h3> Disabled: Edicion e ingreso Inhabilitado (En gris)</h3>
+        <label>Campo</label>
+        <input type="text" value="Hola" disabled/>
+        <br>
+        <label>Campo</label>
+        <textarea disabled=""> Hola </textarea>
+        <br>
+    
+    </form>
+</body>
+</html>
